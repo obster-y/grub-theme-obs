@@ -27,6 +27,7 @@ To be done ...(perhaps other theme's install script is available?)
 
 ## Structure
 
+```
 grub-theme-obs
 ├── backgrounds
 │   └── ..
@@ -47,6 +48,7 @@ grub-theme-obs
 │   └── progressing_bar.inkscape.svg
 ├── *.pf2
 └── theme.txt
+```
 
 ## Customize
 
