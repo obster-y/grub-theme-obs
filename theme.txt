@@ -1,0 +1,138 @@
+################################
+# General
+################################
+
+title-text: "Operating System Selection"
+title-font: "DejaVu Sans Regular 20"
+title-color: "#d9d9d9"
+
+#message-font: "DejaVu Sans Regular 16"
+#message-color: "#eff0f1"
+
+desktop-image: "backgrounds/wave.png"
+desktop-color: "#808080"
+
+terminal-box: "terminal_boxes/terminal_box_*.png"
+terminal-font: "Fira Code Regular 18"
+terminal-left: "10%"
+terminal-top: "10%"
+terminal-width: "80%"
+terminal-height: "80%"
+terminal-border: "20"
+
+
+
+################################
+# Main menu
+################################
+
+# Creat ur own font by
+# `grub-mkfont path/to/font -v -o output.name -h height`
+
++ boot_menu {
+  left = 30%
+  top = 30%
+  width = 40%
+  height = 40%
+
+  icon_width = 40
+  icon_height = 40
+
+  item_icon_space = 20
+  item_font = "DejaVu Sans Regular 24"
+  item_color = "#cccccc"
+  item_height = 48
+  item_padding = 8
+  item_spacing = 16
+
+  selected_item_pixmap_style = "menu_selects/select_*.png"
+  selected_item_font = "DejaVu Sans Regular 24"
+  selected_item_color= "#ffffff"
+
+  scrollbar = false
+#  menu_pixmap_style = "menus/boot_menu_*.png"
+}
+
+# Substitution of menu_pixmap_style
+# Design for yourself: 1080P - 845x497, 1268x745, 4k - 1690x994
++ image {
+  left = 28%
+  top = 27%
+  width = 44%
+  height = 46%
+  file = "menus/viewbox-10%.png"
+}
+
+
+
+################################
+# Progress bar
+################################
+
++ progress_bar {
+  id = "__timeout__"
+
+  top = 82%
+  left = 30%
+  width = 40%
+  align = "center"
+
+  # text = "@TIMEOUT_NOTIFICATION_LONG@"
+  text_color = "white"
+
+  ## fg/bg/border for plain usage ##
+  # fg_color = "#ffffff"
+  # bg_color = "#31363b"
+  # border_color = "#999999"
+  bar_style = "progress_bars/bg_*.png"
+  highlight_style = "progress_bars/hl_*.png"
+}
+
+
+
+################################
+# Hint
+################################
+
+# Design for yourself: 1080P - 480x42, 2k - 720x63, 4k - 960x84
++ image {
+  top = 100%-50
+  left = 50%-300
+  width = 600
+  height = 42
+  file = "misc/info.png"
+}
+
+#+ label {
+#  left = 0
+#  top = 100%-24
+#  width = 100%
+#  align = "center"
+#  color = "#ffffff"
+#  font = "DejaVu Sans Regular 16"
+#
+#  text = "Use ↑ and ↓ keys to change selection, Enter to confirm" # en
+#  # text = "System mit ↑ und ↓ auswählen und mit Enter bestätigen." # de
+#  # text = "Choisissez le système avec les flèches du clavier (↑ et ↓), puis validez avec la touche Enter (↲)" # fr
+#  # text = "Use las teclas ↑ y ↓ para cambiar la selección, Enter para confirmar" # es
+#  # text = "Use as teclas ↑ e ↓ para mudar a seleção, e ENTER para confirmar" # pt
+#  # text = "Bruk ↑ og ↓ for å endre menyvalg, velg med Enter" # no
+#  # text = "Используйте клавиши ↑ и ↓ для изменения выбора, Enter для подтверждения" # ru
+#  # text = "Використовуйте ↑ та ↓ для вибору, Enter для підтвердження" # ua
+#  # text = "使用 ↑ 和 ↓ 键移动选项，Enter 键确认" # zh_CN
+#}
+
+
+
+################################
+# Other information
+################################
+
+#+ image {
+#  top = 40%-150
+#  left = 65%-150
+#  width = 300
+#  height = 300
+#
+#  file = "kde_logo.png"
+#}
