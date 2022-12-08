@@ -53,8 +53,11 @@ grub-theme-obs
 ## Customize
 
 Read these first:
+
 [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference)
+
 [Grub2 theme tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial)
 
 .xcf files can be edit with [GIMP](https://www.gimp.org)
+
 .inkscape.svg can be edit with [inkscape](https://inkscape.org)
